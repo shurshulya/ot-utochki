@@ -8,85 +8,88 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="language-background">
-            <button class="language" type="button">en</button>
-        </div>
-        <section class="top-menu-section">
-            <nav class="header-menu">
-                <ul class="header-menu-list">
-                    <li class="header-menu-item">shop</li>
-                    <li class="header-menu-item">my design</li>
-                    <li class="header-menu-item">about</li>
+    <div class="container">
+        <header class="header">
+            <h1 class="visually-hidden">Ot Utochki – Handmade Jewelry</h1>
+            <div class="language-background">
+                <button class="language" type="button">en</button>
+            </div>
+            <section class="top-menu-section">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item"><a class = 'header-menu-item-link' href = '#'>shop</a></li>
+                        <li class="header-menu-item" ><a class = 'header-menu-item-link' href = '#'>my design</a></li>
+                        <li class="header-menu-item"><a class = 'header-menu-item-link' href = '#'>about</a></li>
+                    </ul>
+                </nav>
+                <div class="header-logo">
+                    <img class="header-logo-img" src="./icons/ot_utochki_logo.svg" alt="ot utochki">
+                </div>
+                <div class="top-right-menu-div">
+                    <a class="search-button" href = '#'>search</a>
+                    <img class="shop-button" src="./icons/shop.svg" alt="go to cart" width="30" height="30">
+                </div>
+            </section>
+            <div class="header-preview-image ">
+                <img class="header-preview-image-1" src="./img/preview_image_1.jpg" 
+                alt="Girl with beads">
+                <img class="header-preview-image-2" src="./img/preview_image_2.jpg" 
+                alt="Congo gold earrings">
+            </div>
+            <div class="header-button-shop-now-position">
+                <a class="header-button-shop-now button" href = '#'>shop now</a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-catalog">
+                <h2 class="main-catalog-name">shop by category</h2>
+                <div class="main-catalog-cards">
+                    <div class="main-catalog-card">
+                        <h3 class="main-catalog-card-name">bracelets</h3>
+                        <img class="main-catalog-card-img" src="./img/main-cataloge-card-1.jpg" 
+                        alt="Go to bracelets catalog">
+                    </div>
+                    <div class="main-catalog-card">
+                        <h3 class="main-catalog-card-name">earrings</h3>
+                        <img class="main-catalog-card-img" src="./img/main-cataloge-card-2.jpg" 
+                        alt="Go to earrings catalog">
+                    </div>
+                    <div class="main-catalog-card">
+                        <h3 class="main-catalog-card-name">necklace</h3>
+                        <img class="main-catalog-card-img" src="./img/main-cataloge-card-3.jpg" 
+                        alt="Go to necklace catalog">
+                    </div>
+                </div>
+            </section>
+            <section class="main-instagram-section">
+                <h2 class="main-instagram-section-name">Get inspired</h2>
+                <a class="main-instagram-section-button button" href="https://www.instagram.com/ot_utochki/">insta shop</a>
+                <div class="main-instagram-section-photo-s">
+                    <img class="main-instagram-section-photo" src="./img/instagram-section-photo-1.jpg" 
+                    alt="Ceramic river pearl bead jewelry">
+                    <img class="main-instagram-section-photo" src="./img/instagram-section-photo-2.jpg" 
+                    alt="Gold pendant with gold heart and ring">
+                    <img class="main-instagram-section-photo" src="./img/instagram-section-photo-3.jpg" 
+                    alt="Bird shaped stud earrings on red pepper">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-visit-information">
+                you can visit us
+                <ul class="footer-visit-list">
+                    <li class="footer-visit-item"><span class="blue-text">Kaliningrad</span>, Gallery of Kaliningrad Designers, <span class="blue-text">Oktyabrskaya Embankment,&nbsp;12&nbsp;</span></li>
+                    <li class="footer-visit-item"><span class="blue-text">Perm</span>, Galleria Russian Brands Mall, <span class="blue-text">Petropavlovskaya 73a</span></li>
                 </ul>
-            </nav>
-            <div class="header-logo">
-                <img class="header-logo-img" src="./icons/ot_utochki_logo.svg" alt="ot utochki">
             </div>
-            <div class="top-right-menu-div">
-                <button class="search-button" type="button">search</button>
-                <img class="shop-button" src="./icons/shop.svg" alt="go to cart" width="30" height="30">
+            <div class="footer-contacts">
+                join our community
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item"><a href="#" target="_blank"><img src="./icons/youTube-icon.svg" alt="Go to youtube"></a></li>
+                    <li class="footer-contacts-item"><a href="#" target="_blank"><img src="./icons/insta-icon.svg" alt="Go to instagram"></a></li>
+                </ul>
             </div>
-        </section>
-        <div class="header-preview-image container">
-            <img class="header-preview-image-1" src="./img/preview_image_1.jpg" 
-            alt="Girl with beads">
-            <img class="header-preview-image-2" src="./img/preview_image_2.jpg" 
-            alt="Congo gold earrings">
-        </div>
-        <div class="header-button-shop-now-position">
-            <button class="header-button-shop-now button" type="button">shop now</button>
-        </div>
-    </header>
-    <main class="main">
-        <section class="main-catalog">
-            <h2 class="main-catalog-name">shop by category</h2>
-            <div class="main-cataloge-card-s">
-                <div class="main-cataloge-card">
-                    <h3 class="main-cataloge-card-name">bracelets</h3>
-                    <img class="main-cataloge-card-img" src="./img/main-cataloge-card-1.jpg" 
-                    alt="Go to bracelets catalog">
-                </div>
-                <div class="main-cataloge-card">
-                    <h3 class="main-cataloge-card-name">earings</h3>
-                    <img class="main-cataloge-card-img" src="./img/main-cataloge-card-2.jpg" 
-                    alt="Go to earings catalog">
-                </div>
-                <div class="main-cataloge-card">
-                    <h3 class="main-cataloge-card-name">necklace</h3>
-                    <img class="main-cataloge-card-img" src="./img/main-cataloge-card-3.jpg" 
-                    alt="Go to necklace catalog">
-                </div>
-            </div>
-        </section>
-        <section class="main-insagram-section">
-            <h2 class="main-insagram-section-name">Get inspired</h2>
-            <a class="main-insagram-section-button button" href="https://www.instagram.com/ot_utochki/">insta shop</a>
-            <div class="main-insagram-section-photo-s">
-                <img class="main-insagram-section-photo" src="./img/insagram-section-photo-1.jpg" 
-                alt="Ceramic river pearl bead jewelry">
-                <img class="main-insagram-section-photo" src="./img/insagram-section-photo-2.jpg" 
-                alt="Gold pendant with gold heart and ring">
-                <img class="main-insagram-section-photo" src="./img/insagram-section-photo-3.jpg" 
-                alt="Bird shaped stud earrings on red pepper">
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-visit-informaion">
-            you can visit us
-            <ul class="footer-visit-list">
-                <li class="footer-visit-item"><span class="blue-text">Kaliningrad</span>, Gallery of Kaliningrad Designers, <span class="blue-text">Oktyabrskaya Embankment,&nbsp;12&nbsp;</span></li>
-                <li class="footer-visit-item"><span class="blue-text">Perm</span>, Galleria Russian Brands Mall, <span class="blue-text">Petropavlovskaya 73a</span></li>
-            </ul>
-        </div>
-        <div class="footer-contacts">
-            join our community
-            <ul class="footer-contacts-list">
-                <li class="footer-contacts-item"><img src="./icons/youTube-icon.svg" alt="Go to youtube"></li>
-                <li class="footer-contacts-item"><img src="./icons/insta-icon.svg" alt="Go to instagram"></li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

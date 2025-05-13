@@ -131,6 +131,7 @@
   --font-family-accent: 'Old Standart TT', sans-serif;
 
   --container-max-width: 1920px;
+  --padding-x: 15px;
 
   --color-blue: #040F89;
   --color-black: #000000;
@@ -139,14 +140,32 @@
   --transition-time: 1s;
  }
 
+ a {
+  text-decoration: none;
+ }
+
  h1, h2, h3, h4, div, button, a, ul {
   text-transform: lowercase;
  }
 
  .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
+  padding-inline: var(--padding-x);
+  max-width: var(--container-max-width);
  }
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
  .header{
   display: flex;
@@ -223,6 +242,11 @@
   border-bottom-color: var(--color-white);
  }
 
+ .header-menu-item-link {
+  text-decoration: none;
+  color: var(--color-white);
+ }
+
  .header-logo {
   display: flex;
   position: absolute;
@@ -282,8 +306,8 @@
  .header-preview-image{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  max-width: var(--container-max-width);
+  justify-items: center;
+  width: 100%;
  }
  
  .button {
@@ -345,7 +369,7 @@
   color: var(--color-white);
  }
 
- .main-cataloge-card-s {
+ .main-catalog-cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -354,11 +378,11 @@
   margin-inline: 10px;
  }
 
- .main-cataloge-card {
+ .main-catalog-card {
   position: relative;
  }
 
- .main-cataloge-card-name {
+ .main-catalog-card-name {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -370,21 +394,21 @@
   text-shadow: 5px 5px var(--color-blue);
  }
 
- .main-cataloge-card-img{
+ .main-catalog-card-img{
   width: clamp(200px, 20.84vw, 400px);
   height: auto;
   border: none;
   border-radius: 20px;
  }
 
- .main-insagram-section {
+ .main-instagram-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
  }
 
- .main-insagram-section-name {
+ .main-instagram-section-name {
   font-family: var(--font-family-base);
   font-size: clamp(16px, 1.82vw, 35px);
   font-weight: 500;
@@ -392,7 +416,7 @@
   left: clamp(10px, 5.2vw, 100px);
  }
 
- .main-insagram-section-button{
+ .main-instagram-section-button{
   display: block;
   text-decoration: none;
   position: absolute;
@@ -403,7 +427,7 @@
   text-align: center;
  }
 
- .main-insagram-section-photo-s {
+ .main-instagram-section-photo-s {
   display: flex;
   flex-direction: row;
   gap: clamp(20px, 2vw, 40px);
@@ -411,7 +435,7 @@
   margin-bottom: 10.41vw;
  }
 
- .main-insagram-section-photo {
+ .main-instagram-section-photo {
   width: clamp(250px, 28.65vw, 550px);
   height: auto;
  }
@@ -429,7 +453,7 @@
 
  }
 
- .footer-visit-informaion{
+ .footer-visit-information{
   position: absolute;
   left: clamp(20px, 5.2vw, 100px);
   font-family: var(--font-family-base);
@@ -483,11 +507,11 @@
     border: 1px solid var(--color-white);
   }
 
-  .main-insagram-section-photo-s {
+  .main-instagram-section-photo-s {
     flex-direction: column;
   }
 
-  .main-insagram-section-photo {
+  .main-instagram-section-photo {
     width: 450px;
     padding-inline: 10px;
   }
